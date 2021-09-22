@@ -1,0 +1,19 @@
+body {
+  font-family: Roboto;
+}
+label {
+  cursor: pointer;
+  font-size: 20px;
+  color:royalblue;
+  /* position: relative; */
+}
+.block {
+  position: absolute;
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  background: salmon;
+  border: 2px solid saddlebrown;
+  border-radius: 50%;
+}
+

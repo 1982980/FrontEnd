@@ -1,0 +1,106 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>Знакомство с HTML тегами. Часть №3 (Формы)</title>
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="/htmltags_3/css/style.css" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <form action="#" method="GET">
+      <div>
+        <p>Имя</p>
+        <input tabindex="1" type="text" name="name" placeholder="Имя" />
+      </div>
+      <div>
+        <p>Пароль</p>
+        <input tabindex="2" type="password" name="pass" />
+      </div>
+      <div>
+        <p>Телефон</p>
+        <input tabindex="3" type="tel" name="usertel" />
+      </div>
+      <div class="test">
+        <p>Пол</p>
+        <div>
+          <input
+            tabindex="4"
+            type="radio"
+            name="gender"
+            value="male"
+            checked
+          />Мужской
+        </div>
+        <div>
+          <input tabindex="5" type="radio" name="gender" name="female" />Женский
+        </div>
+      </div>
+      <div>
+        <p>Имущество</p>
+        <label>
+          <div>
+            <span>Велик</span>
+            <input
+              tabindex="6"
+              type="checkbox"
+              name="own"
+              value="bike"
+              id="bike"
+            />
+          </div>
+        </label>
+        <label>
+          <div>
+            <span>Машина</span>
+            <input
+              tabindex="7"
+              type="checkbox"
+              name="own"
+              value="car"
+              id="car"
+            />
+          </div>
+          <div class="block"></div>
+        </label>
+        <label>
+          <div>
+            <span>Квартира</span>
+            <input
+              tabindex="8"
+              type="checkbox"
+              name="own"
+              value="flat"
+              id="flat"
+            />
+          </div>
+        </label>
+      </div>
+      <div>
+        <p>Дополнительная информация</p>
+        <textarea tabindex="9" name="info"></textarea>
+      </div>
+      <div>
+        <p>Проверить фото</p>
+        <input tabindex="10" type="file" name="foto" />
+      </div>
+      <div>
+        <p>Добавить любимый цвет</p>
+        <select name="color">
+          <option selected tabindex="11" value="red">Красный</option>
+          <option tabindex="12" value="blue">Голубой</option>
+          <option tabindex="13" value="yellow">Желтый</option>
+        </select>
+      </div>
+      <div>
+        <p>Действие</p>
+        <button tabindex="14" type="submit">Отправить</button>
+        <button tabindex="15" type="reset">Очистить</button>
+      </div>
+    </form>
+  </body>
+</html>
