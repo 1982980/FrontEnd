@@ -15,7 +15,7 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
-/* body {
+body {
   font-family: AdobeInvisFont,TimesNewRomanPSMT,MyriadPro-Regular;
   background: #E8E8E8 url(/css_5/css_5/hw/img/Ellipse.png) 50% 130px no-repeat;
 }
@@ -118,42 +118,4 @@ text-shadow: 0 1px 0 rgba(0,0,0,0.3);
 /* .content-bottom-info__link span {
   background: url('/css_5/css_5/hw/img/icon/arrow.png') right no-repeat;
   padding: 0 30px 0 0;
-} */
-body {
-  margin: 105px 0 135px 0;
-background-color: #e8e8e8;
-font-family: 'Times New Roman', Times, serif;
-}
-.content {
-}
-.content-top {
-  text-align: center;
-}
-.content-top__category {
-  opacity: 0.6;
-font-family: Arial;
-font-size: 14px;
-line-height: 40px;
-font-weight: 400;
-text-transform: uppercase;
-letter-spacing: 0.2em;
-color: #273d46;
-}
-.content-top__title {
-font-size: 36px;
-line-height: 50px;
-font-weight: 400;
-color: #273d46;
-}
-.content-image {
-}
-.content-bottom {
-}
-.content-bottom__text {
-}
-.content-bottom-info {
-}
-.content-bottom-info__list {
-}
-.content-bottom-info__link {
 }
