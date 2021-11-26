@@ -37,7 +37,7 @@ body{
 .content-text__header__absolut{
   position: absolute;
   left: 50px;
-  top: 50%;
+  top: 300px;
 }
 .content-text__list{
   margin: 0 0 50px 0;
@@ -83,54 +83,74 @@ body{
   display: inline-block;
   background-color:#80b7b3;
   border-radius:20px;
-  padding: 0 35px;
+  padding: 0 59px 0 30px;
   font-size: 14px;
   line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
+  position: relative;
 }
-.content-button__link span::after{
+.content-button__link1 span::after{
   content: url(/css_6/hw_псевдоклассы/img/arrow.png);
-  padding: 0 30px 0 0;
+  position: absolute;
+  top:2px;
+  right: 25px;
 }
-.content-button__link {
+.content-button__link2 {
   height: 44px;
   line-height: 44px;
   box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
   display: inline-block;
   background-color:#80b7b3;
   border-radius:20px;
-  padding: 0 35px;
+  padding: 0 59px 0 30px;
   font-size: 14px;
   line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
+  position: relative;
 }
-.content-button__link:hover {
+.content-button__link2 span::after{
+  content:url("../img/arrow.png");
+  position: absolute;
+  top:2px;
+  right:25px;
+}
+.content-button__link2:hover {
   background-color:#3a5856;
 }
 .content-button__link3 {
-  background-color:#80b7b3;
-}
-.content-button__link3:visited {
   height: 44px;
-  line-height: 44px;
   box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
   display: inline-block;
-  background-color:#818181;
+  background-color:#80b7b3;
   border-radius:20px;
-  padding: 0 35px;
+  padding: 0 59px 0 30px;
   font-size: 14px;
   line-height: 40px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: #ffffff;
-
+  position: relative;
+}
+.content-button__link3::after{
+  content:url("../img/arrow.png");
+  position: absolute;
+  top:2px;
+  right:25px;
+}
+.content-button__link3:hover{
+  box-shadow: 0px 6px 40px 0px rgba(128,183,179,0.54);
+  background-color:#3a5856;
+}
+.content-button__link3:active {
+  box-shadow: 0px 6px 40px 0px rgba(166, 170, 170, 0.54);
+  background-color:#818181;
 }
 .content-button>span{
 font-size: 14px;
@@ -201,4 +221,21 @@ color: #000000;
   letter-spacing: 0.2em;
   color: #000000;
   text-align: center;
+}
+.content-text__bottom {
+  width: 785px;
+  margin-top:118px;
+  margin-bottom: 721px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+.content-text__bottom p:first-child:first-line {
+  color:#ff0000;
+}
+.content-text__bottom p:first-child{
+  margin-bottom: 43px;
+}
+.content-text__bottom p:last-child::first-letter{
+  color:#ff0000;
 }
