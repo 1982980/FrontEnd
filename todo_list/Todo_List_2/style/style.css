@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  /* считает размер блока с внутренними отступами и границами. Без magin */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* vh относительная высота, 1vh = 1% высоты
+  min-height -> задали минимальную высоту блоку и теперь все внутри будет по центу */
+  background-color:#f5f5f5;
+}
+.todoList {
+  background-color: white;
+  position: relative;
+  width: 550px;
+}
+.todoList h2{
+  color: rgba(175, 47, 47, 0.15);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+.todoList ul, form{
+  position: relative;
+
+}
+.todoList ul li, form {
+  list-style: none;
+  /* убираю точки-отделители для элемента списка */
+  padding: 16px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.todoList ul li:last-child{
+  border-bottom: none;
+}
+.todoList ul li label, form{
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+.todoList ul li label input{
+  visibility: hidden;
+  appearance: none;
+}
+.todoList ul li label span{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.todoList ul li label p {
+  padding-left: 15px;
+}
+.todoList ul li label span::before{
+  content:"";
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  transform: rotate(-40deg);
+}
+.todoList ul li label input:checked ~ p{
+  text-decoration: line-through;
+  color: #ccc;
+}
+.todoList ul li label input:checked ~ span{
+  background:aqua;
+  
+}

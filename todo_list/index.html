@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>todo list</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/nullstyle.css" />
+    <link rel="stylesheet" href="scss/css/style.css" />
+
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <div class="container">
+      <div class="form">
+        <h2>Todo List</h2>
+        <form action="#" placeholder="Enter" class="form__inner">
+          <input type="text" class="form__new_item" />
+        </form>
+        <div class="list">
+          <ul class="list__items">
+            <li class="list__item">Третий тест</li>
+            <li class="list__item">Второй тест</li>
+            <li class="list__item">Первый тест</li>
+          </ul>
+          <div class="list__footer">
+            <span class="list__counter"></span>
+            <a href="#" class="list__btn-all">All</a>
+            <a href="#" class="list__btn-active">Active</a>
+            <a href="#" class="list__btn-complete">Completed</a>
+            <a href="#" class="list__btn-clear">Clear completed</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
